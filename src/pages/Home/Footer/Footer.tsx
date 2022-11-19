@@ -9,24 +9,23 @@ export default function Footer() {
         <div>
           <h3 className="Footer__title">İletişim</h3>
           <a
-            href="https://goo.gl/maps/zGNyKQWp4NUuWDAP8"
+            href="https://goo.gl/maps/r71SUwacQ8MVE9vm7"
             className="Footer__address"
           >
-            Adres: Çifte Havuzlar Mah. Eski Londra Asfaltı Cad. Kuluçka Merkezi
-            D2 Blok No: 151/1F İç Kapı No: 2B03 Esenler/İstanbul
+            Zühtüpaşa, Bağdat Cd. No:2, 34724 Kadıköy/İstanbul
           </a>
         </div>
-        <a href="mailto:bilgi@tesodev.com" className="Footer__email">
-          Email: bilgi@tesodev.com
+        <a href="mailto:yalcinefdal@gmail.com" className="Footer__email">
+          Email: yalcinefdal@gmail.com
         </a>
       </div>
-      <div className="Footer__map" >
+      <div className="Footer__map">
         <iframe
-          title="tesodev map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2795620386214!2d28.88875941517743!3d41.01913932670571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb7abf29ba35%3A0xc98f44e9057adcde!2zVGVzb2RldiBZYXrEsWzEsW0gRG9uYW7EsW0gQmlsacWfaW0gQml5b21lZGlrYWwgS29uZ3JlIFR1cml6bSBFxJ9pdGltIERhbsSxxZ9tYW5sxLFrIExpbWl0ZWQgxZ5pcmtldGk!5e0!3m2!1sen!2str!4v1664711077559!5m2!1sen!2str"
-          loading="lazy"
-          width="100%" 
+          title="Home-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6023.530471138655!2d29.038994569927077!3d40.98665257885946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab870784d1389%3A0x2bf4921764859e70!2sUlker%20Fenerbahce%20Sukru%20Saracoglu%20Stadium!5e0!3m2!1sen!2str!4v1668855043575!5m2!1sen!2str"
+          width="100%"
           height="222px"
+          loading="lazy"
         />
       </div>
     </footer>
