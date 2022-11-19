@@ -1,0 +1,90 @@
+@import "../../../../assets/styles/utils";
+
+.DetailedSearchItem {
+  padding: 12px 0;
+  border-top: 1px solid $c-lightGray;
+
+  &:first-child {
+    border: none;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    padding-left: 28px;
+
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color $transitionTime;
+  
+    &:hover {
+      background-color:rgba(79, 117, 194, 0.21);
+    }
+  }
+
+  &__info-container {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__icon {
+    height: 22px;
+    width: 18px;
+
+    background-image: url('../../../../assets/img/searchPointer.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__name {
+    @extend %fontInter;
+    font-size: $font-m;
+    line-height: 1.25;
+    color: $c-textDark;
+    white-space: nowrap;
+  }
+
+  &__company {
+    @extend %fontInter;
+    font-size: $font-sm;
+    line-height: $lineH-m;
+    color: $c-textLighter;
+    white-space: nowrap;
+  }
+
+  &__place-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  &__country {
+    width: max-content;
+
+    @extend %fontInter;
+    font-size: $font-m;
+    line-height: 1.25;
+    color: $c-gray;
+  }
+
+  &__date {
+    @extend %fontInter;
+
+    font-weight: 500;
+    font-size: $font-m;
+    line-height: 1;
+    color: $c-gray;
+  }
+}

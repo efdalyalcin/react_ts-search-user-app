@@ -1,0 +1,35 @@
+@import '../../../assets/styles/utils';
+
+.NewsCard {
+  display: flex;
+  flex-direction: column;
+
+  width: 324px;
+
+  object-fit: contain;
+  object-position: center;
+
+  transition: transform $transitionTime;
+
+  &:hover {
+    transform: scale(.95);
+  }
+
+  &__title {
+    margin-top: 12px;
+
+    @extend %fontInterBold;
+    font-size: $font-m;
+    line-height: 1.5;
+    color: $c-textDark;
+  }
+
+  &__info {
+    margin-top: 8px;
+
+    @extend %fontInter;
+    font-size: $font-xsm;
+    line-height: 1.25;
+    color: $c-textLight;
+  }
+}

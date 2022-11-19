@@ -1,0 +1,63 @@
+@import '../../assets/styles/utils';
+
+.AddLinkPage {
+  display: flex;
+  flex-direction: column;
+
+  @extend %minMaxWidth;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-left: 36px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+
+  background-color: $c-nearlyWhite;
+
+  @include mediaMaxWidth {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  &__inputs {    
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 64px;
+    margin-left: 17%;
+    max-width: 600px;
+
+    @include mediaMaxWidth {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__button {
+    margin-top: 72px;
+    align-self: flex-end;
+    padding: 8px 40px;
+
+    background-color: $c-navyBlue;
+    border-radius: 8px;
+
+    @extend %fontRobotoBold;
+    font-size: $font-l;
+    line-height: $font-l;
+    color: $c-textWhite;
+
+    transition: background-color $transitionTime;
+
+    @include mediaMaxWidth($mobileWidth) {
+      margin-top: 32px;
+    }
+
+    &:hover {
+      background-color: $c-lightBlue;
+    }
+  }
+}

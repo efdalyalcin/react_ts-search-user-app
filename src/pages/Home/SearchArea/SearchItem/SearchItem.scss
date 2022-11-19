@@ -1,0 +1,66 @@
+@import '../../../../assets/styles/utils';
+
+.SearchItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+
+  padding: 12px 0;
+
+  border-top: 1px solid $c-lightGray;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    top: -1px;
+    left: 0;
+    border: 1px solid white;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    top: -1px;
+    right: 0;
+    border: 1px solid white;
+  }
+
+  &:first-child {
+    border: none;
+  }
+
+  &__icon {
+    height: 22px;
+    width: 18px;
+
+    background-image: url('../../../../assets/img/searchPointer.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__name {
+    @extend %fontInter;
+    font-size: $font-m;
+    line-height: 1.25;
+    color: $c-textDark;
+    white-space: nowrap;
+  }
+
+  &__company {
+    @extend %fontInter;
+    font-size: $font-sm;
+    line-height: $lineH-m;
+    color: $c-textLighter;
+    white-space: nowrap;
+  }
+}

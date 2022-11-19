@@ -1,0 +1,35 @@
+@import "../../../assets/styles/utils";
+
+.Header {
+  @extend %minMaxWidth;
+  margin: 0 auto;
+  @extend %sectionSidePaddings;
+  padding-top: 64px;
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__logo {
+    position: relative;
+
+    max-width: max-content;
+    margin: 32px auto 0;
+  }
+
+  &__img {
+    height: 120px;
+  }
+
+  // &__title {
+  //   position: absolute;
+  //   right: -28px;
+  //   max-width: max-content;
+
+  //   @extend %fontRoboto;
+  //   font-size: $font-sm;
+  //   line-height: $lineH-m;
+  //   color: $c-gray;
+  // }
+}

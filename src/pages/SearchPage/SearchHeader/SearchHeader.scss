@@ -1,0 +1,50 @@
+@import '../../../assets/styles/utils';
+
+.SearchHeader {
+  @extend %sectionSidePaddings;
+  padding-top: 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 32px;
+
+  @include mediaMaxWidth(1024px) {
+    gap: 8px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+  }
+
+  &__logo {
+    height: 64px;
+    transition: transform $transitionTime;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__bar-container {
+    flex-grow: 1;
+    @include mediaMaxWidth($desktopTabletTransition) {  
+      grid-area: 2 / 1 / 2 / -1;
+    }
+  }
+
+  &__button-container {
+    margin-left: 64px;
+
+    @include mediaMaxWidth(1024px) {
+      margin-left: 16px;
+    }
+
+    @include mediaMaxWidth($desktopTabletTransition) {
+      grid-area: 1 / 2 / 1 / 2;
+    }
+  }
+}

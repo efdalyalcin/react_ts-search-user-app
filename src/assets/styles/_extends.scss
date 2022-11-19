@@ -1,0 +1,36 @@
+%minMaxWidth {
+  max-width: $maxWidth;
+  min-width: $minWidth;
+}
+
+%sectionSidePaddings {
+  padding: 0 64px;
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    padding: 0 48px;
+  }
+
+  @include mediaMaxWidth {
+    padding: 0 32px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding: 0 16px;
+  }
+}
+
+%fontRoboto {
+  font-family: "Roboto", sans-serif;
+}
+
+%fontRobotoBold {
+  font-family: "Roboto-Bold", sans-serif;
+}
+
+%fontInter {
+  font-family: "Inter", sans-serif;
+}
+
+%fontInterBold {
+  font-family: "Inter-Bold", sans-serif;
+}

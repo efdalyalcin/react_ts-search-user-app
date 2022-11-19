@@ -1,0 +1,30 @@
+@import '../../../assets/styles/utils';
+
+.SearchSection {
+  @extend %minMaxWidth;
+  max-width: 1120px;
+  width: 64%;
+  margin: 40px auto 0;
+
+  @extend %sectionSidePaddings;
+
+  @include mediaMaxWidth {
+    width: 80%;  
+    margin: 24px auto 0;
+    padding: 0;
+  }
+
+  &__title {
+    padding: 12px 24px;
+
+    @extend %fontInterBold;
+    font-size: $font-title;
+    line-height: $lineH-title;
+    color: $c-textDark;
+    white-space: nowrap;
+
+    @include mediaMaxWidth($mobileWidth) {
+      padding: 12px 8px;
+    }
+  }
+}

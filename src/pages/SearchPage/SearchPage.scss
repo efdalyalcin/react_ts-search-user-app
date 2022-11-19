@@ -1,0 +1,15 @@
+@import '../../assets/styles/utils';
+
+.SearchPage {
+  @extend %minMaxWidth;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  column-gap: 80px;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: $c-nearlyWhite;
+}

@@ -1,0 +1,60 @@
+@import "../../../assets/styles/utils";
+
+.AddLinkInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label,
+  &__feedback,
+  &__input {
+    padding-left: 8px;
+    @extend %fontRobotoBold;
+    font-size: $font-l;
+    line-height: $lineH-l;
+    color: $c-gray;
+
+    transition: color $transitionTime;
+
+    &--error {
+      color: rgba(255, 0, 0, 0.5);
+    }
+  }
+
+  &__input {
+    max-width: 600px;
+
+    padding: 10px 16px;
+    border: 2px solid $c-gray;
+    border-radius: 8px;
+
+    transition: color $transitionTime, border-color $transitionTime,
+      background-color $transitionTime;
+
+    &::placeholder {
+      transition: color $transitionTime;
+      color: rgba(100, 100, 100, 0.5);
+    }
+
+    &:hover {
+      background: rgba(100, 100, 100, 0.08);
+    }
+
+    &--error {
+      border-color: rgba(255, 0, 0, 0.5);
+
+      &::placeholder {
+        color: rgba(255, 0, 0, 0.5);
+      }
+    }
+  }
+
+  &__feedback {
+    opacity: 0;
+    transition: color $transitionTime, opacity $transitionTime;
+
+    &--error {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../assets/styles/utils";
+
+.AddLinkPopup {
+  position: relative;
+  align-self: flex-end;
+  margin-top: 56px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 20px 30px 20px 16px;
+
+  background-color: #c4c4c4;
+  border-radius: 8px;
+
+  max-width: 376px;
+
+  &__close {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    background-image: url("../../../assets/img/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: background-color $transitionTime;
+
+    &:hover {
+      background-color: $c-lightBlue;
+    }
+  }
+
+  &__title {
+    @extend %fontInterBold;
+    font-size: $font-sm;
+    line-height: $lineH-title;
+    color: $c-textDark;
+    white-space: nowrap;
+  }
+
+  &__text {
+    @extend %fontInter;
+    font-size: $font-sm;
+    line-height: 24px;
+    color: $c-textDark;
+  }
+
+  &__error {
+    padding: 8px 16px;
+    border-radius: 48px;
+    background-color: #FF4E78;
+
+    @extend %fontInter;
+    font-weight: 500;
+    font-size: $font-m;
+    line-height: 1;
+    color: $c-textWhite;
+  }
+}

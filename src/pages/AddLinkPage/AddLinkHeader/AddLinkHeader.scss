@@ -1,0 +1,84 @@
+@import '../../../assets/styles/utils';
+
+.AddLinkHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @include mediaMaxWidth($mobileWidth) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    height: 64px;
+    transition: transform $transitionTime;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__back-to {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &:hover > .AddLinkHeader__text {
+      color: $c-lightBlue;
+    }
+
+    &:hover > .AddLinkHeader__icon,
+    &:hover > .AddLinkHeader__icon::after,
+    &:hover > .AddLinkHeader__icon::before {
+      background-color: $c-lightBlue;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    flex-shrink: 0;
+
+    width: 26px;
+    height: 3px;
+    background-color: $c-gray;
+
+    border-radius: 3px 0 0 3px;
+    transition: background-color $transitionTime;
+
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 16px;
+      height: 3px;
+
+      border-radius: 3px;
+      background-color: $c-gray;
+
+      transition: background-color $transitionTime;
+    }
+
+    &::after {
+      top: -1px;
+      transform-origin: left;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      top: 1px;
+      transform-origin: left;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__text {
+    @extend %fontRobotoBold;
+    font-size: $font-xl;
+    line-height: $lineH-xl;
+    color: $c-gray;
+
+    transition: color $transitionTime;
+  }
+}

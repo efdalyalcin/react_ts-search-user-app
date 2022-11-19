@@ -1,0 +1,72 @@
+@import '../../../assets/styles/utils';
+
+.SearchResults {
+  @extend %sectionSidePaddings;
+  margin: 48px auto;
+  width: 90%;
+
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 2;
+  justify-content: center;
+  column-gap: 16px;
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    width: 100%;
+  }
+
+  @include mediaMaxWidth {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+  }
+
+  &__details,
+  &__pagination {
+    max-width: 728px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  &__details {
+    margin-top: 32px;
+
+    height: 524px;
+    grid-area: 1 / 1 / 1 / 1;
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-area: 2 / 1 / 2 / 1;
+    }
+  }
+
+  &__order {
+    width: 100%;
+    grid-area: 1 / 2 / 1 / 2;
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-area: 1 / 1 / 1 / 1;
+    }
+  }
+
+  &__pagination {
+    grid-area: 2 / 1 / 2 / 1;
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-area: 3 / 1 / 3 / 1;
+    }
+  }
+
+  &__no-results {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @extend %fontRobotoBold;
+    font-size: $font-title;
+    color: $c-textDark;
+  }
+}

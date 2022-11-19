@@ -1,0 +1,20 @@
+@import '../../assets/styles/utils';
+
+.AddNewRecord {
+  padding: 12px 32px;
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background-color: $c-navyBlue;
+  white-space: nowrap;
+
+  @extend %fontRobotoBold;
+  font-size: $font-l;
+  line-height: $lineH-l;
+  color: $c-textWhite;
+  transition: background-color $transitionTime;
+
+  &:hover {
+    background-color: $c-lightBlue;
+  }
+}

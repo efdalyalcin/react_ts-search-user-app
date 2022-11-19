@@ -1,0 +1,55 @@
+@import '../../../assets/styles/utils';
+
+.Footer {
+  @extend %minMaxWidth;
+  margin: 0 auto;
+
+  display: flex;
+  gap: 24px;
+  @extend %sectionSidePaddings;
+  padding-top: 28px;
+  padding-bottom: 28px;
+    
+  background-color: $c-footer;
+  @extend %fontRoboto;
+  font-size: $font-l;
+  line-height: $lineH-l;
+  color: $c-textWhite;
+
+  @include mediaMaxWidth($mobileWidth) {
+    flex-direction: column;
+  }
+
+  &__image,
+  &__address, 
+  &__email {
+    display: block;
+  }
+
+  &__image {
+    object-fit: contain;
+
+    @include mediaMaxWidth {
+      display: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__title,
+  &__email {
+    @extend %fontRobotoBold;
+  }
+
+  &__map {
+    min-width: 40%;
+
+    @include mediaMaxWidth {
+      min-width: 60%;
+    }
+  }
+}

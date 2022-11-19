@@ -1,0 +1,49 @@
+@import '../../../../assets/styles/utils';
+
+.Pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  @extend %fontRobotoBold;
+  font-size: $font-sm;
+  line-height: $lineH-m;
+  font-weight: 700;
+
+  &__prev,
+  &__next {
+    padding: 4px 12px;
+
+    border: 1px solid $c-gray;
+    border-radius: 4px;
+
+    transition: background-color $transitionTime, color $transitionTime;
+
+    &:hover {
+      background-color: $c-lightBlue;
+      color: $c-textWhite;
+    }
+  }
+
+  &__page-numbers{
+    height: 24px;
+    min-width: 24px;
+    padding: 4px;
+
+    border: 1px solid $c-gray;
+    border-radius: 4px;
+
+    transition: background-color $transitionTime, color $transitionTime;
+
+    &:hover {
+      background-color: $c-lightBlue;
+      color: $c-textWhite;
+    }
+
+    &--active {
+      background-color: $c-navyBlue;
+      color: $c-textWhite;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../../assets/styles/utils";
+
+.SearchArea {
+  position: relative;
+
+  max-width: $tabletWidth;
+  min-width: $minWidth;
+  margin: 16px auto 0;
+  padding: 16px 40px;
+
+  height: 240px;
+  border: 1px solid $c-gray;
+  border-radius: 24px;
+
+  opacity: 1;
+  transition: opacity $transitionTime;
+
+  &--disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__noMatch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @extend %fontInterBold;
+    color: $c-textDark;
+    font-size: 24px;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    
+    @extend %fontInterBold;
+    font-size: $font-m;
+    line-height: 1.5;
+    color:$c-textDark;
+  }
+}

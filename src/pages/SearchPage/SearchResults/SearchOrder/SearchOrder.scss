@@ -1,0 +1,62 @@
+@import '../../../../assets/styles/utils';
+
+.SearchOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 2px 8px;
+
+    border: 1px solid #414141;
+    border-radius: 8px;
+    background-color: #F3F2F2;
+
+    @extend %fontRoboto;
+    font-weight: 500;
+    font-size: $font-l;
+    line-height: $lineH-l;
+    color: $c-textDark;
+  }
+
+  &__icon {
+    width: 26px;
+    height: 24px;
+
+    background-image: url("../../../../assets/img/downUpArrows.svg");
+  }
+
+  &__orders {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    padding: 8px;
+
+    border: 1px solid #8F8F8F;
+    box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  &__order-buttons {
+    padding: 6px 8px;
+    border-radius: 8px;
+
+    @extend %fontRoboto;
+    font-weight: 500px;
+    font-size: $font-sm;
+    line-height: $lineH-m;
+    color: $c-textDark;
+
+    transition: background-color $transitionTime;
+    &:hover {
+      background-color: #B3B3B3;
+    }
+  }
+}
