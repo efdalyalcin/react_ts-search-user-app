@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react_ts-search-user-app/static/css/main.19c22067.css",
+    "main.js": "/react_ts-search-user-app/static/js/main.2174799b.js",
+    "static/media/Inter-Bold.ttf": "/react_ts-search-user-app/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
+    "static/media/Inter-Regular.ttf": "/react_ts-search-user-app/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/Roboto-Regular.ttf": "/react_ts-search-user-app/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Bold.ttf": "/react_ts-search-user-app/static/media/Roboto-Bold.f80816a5455d171f948d.ttf",
+    "static/media/carosel.png": "/react_ts-search-user-app/static/media/carosel.d6cc43ea0b391bac07c5.png",
+    "static/media/footer.png": "/react_ts-search-user-app/static/media/footer.1be19f4e8382e8a24ac8.png",
+    "static/media/logo.png": "/react_ts-search-user-app/static/media/logo.1b5dbe8047d2697adde5.png",
+    "static/media/downUpArrows.svg": "/react_ts-search-user-app/static/media/downUpArrows.4d42847d16ad9414c6ef.svg",
+    "static/media/searchPointer.svg": "/react_ts-search-user-app/static/media/searchPointer.b602c2c14c0518b504cb.svg",
+    "index.html": "/react_ts-search-user-app/index.html",
+    "static/media/magnifier.svg": "/react_ts-search-user-app/static/media/magnifier.dd71c317495b61242b01.svg",
+    "static/media/close.svg": "/react_ts-search-user-app/static/media/close.b4c9623294d251e3ae35.svg",
+    "main.19c22067.css.map": "/react_ts-search-user-app/static/css/main.19c22067.css.map",
+    "main.2174799b.js.map": "/react_ts-search-user-app/static/js/main.2174799b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19c22067.css",
+    "static/js/main.2174799b.js"
+  ]
+}
